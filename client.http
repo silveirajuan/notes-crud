@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:4000
+
+###
+
+GET {{baseUrl}}/notes
+
+###
+
+GET {{baseUrl}}/notes/24f0473b-9e20-41bd-86e1-835a005e142b
+
+###
+
+POST {{baseUrl}}/notes
+Content-Type: application/json
+
+{
+  "title": "Título nota de teste 04",
+  "description": "Descrição nota de teste 04"
+}
+
+###
+
+PUT {{baseUrl}}/notes/f50be778-0eba-4b44-b62e-efbc6c58c90b
+Content-Type: application/json
+
+{
+  "title": "Título nota de teste 04",
+  "description": "Descrição nota de teste (descrição editada)"
+}
+
+###
+
+DELETE {{baseUrl}}/notes/57220e1b-7253-414f-89fb-0e3b5420809c

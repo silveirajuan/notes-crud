@@ -1,0 +1,13 @@
+{
+  "name": "note-api",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start:dev": "node --env-file=.env --no-warnings --watch src/server.js"
+  },
+  "dependencies": {
+    "fastify": "4.25.2",
+    "postgres": "3.4.3"
+  }
+}
